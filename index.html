@@ -9,32 +9,54 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
     <style>
-       .pagination-container {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-
-
-.pagination-controls {
+       .pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 20px 0;
 }
 
-#certificates-container .blog-card {
-    display: none;
+.pagination-controls button {
+    background-color: #f64600f7;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#certificates-container .blog-card.active {
-    display: block;
+.pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
+
+.pagination-controls button:hover:not(:disabled) {
+    background-color: #f62900f1;
+    transform: scale(1.05);
+}
+
+.pagination-controls button i {
+    margin: 0;
+}
+
+#page-num {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
 
     </style>
     
@@ -688,55 +710,103 @@
                     <!-- Add your list of certificates here -->
                     <div class="blog-card">
                         <div class="img-holder">
-                            <img src="assets/imgs/certif1.jpg" alt="SPARK CLUB program">
+                            <img src="assets/imgs/certif13.jpg" alt="Certificate of Excellence">
                         </div>
                         <div class="content-holder">
-                            <h6 class="title">SPARK CLUB program</h6>
+                            <h6 class="title">Certificate of Excellence</h6>
                             <br>
-                            <p>Certificate of Participation in the Framework of the SPARK CLUB Ideation Workshops for the Entrepreneurship of Young People.</p>
+                            <p>Awarded to my team, <strong>Primes</strong>, for winning the <strong>"Data Science"</strong> project prize at the 11th edition of the Esprit Project Gala. This accolade recognizes our exceptional performance and innovation in data science.</p>
                             <br>
-                            <p><b>Tunis, 20 March 2018.</b></p>
+                            <p><b>Tunisia, 12 June 2024.</b></p>
                         </div>
                     </div>
                     <div class="blog-card">
                         <div class="img-holder">
-                            <img src="assets/imgs/certif2.jpg" alt="SPARK CLUB program">
+                            <img src="assets/imgs/certif12.jpg" alt="NLP CERTIFICATION">
                         </div>
                         <div class="content-holder">
-                            <h6 class="title">IEEE CS Chapter - Media Manager</h6>
+                            <h6 class="title">Building Transformer-Based Natural Language Processing Applications</h6>
                             <br>
-                            <p>Certificate of appreciation for commitment, and dedication in making the 2021-2022 mandate a success as the Media Manager for the IEEE CS Chapter - ESPRIT Student Branch.</p>
+                            <p>Certificate of Competency for demonstrating competence in the completion of Workshop/Building Transformer-Based Natural Language Processing Application.</p>
                             <br>
-                            <p><b>Tunisia, 20 April 2021.</b></p>
+                            <p><b>Tunisia, April 2024.</b></p>
                         </div>
                     </div>
                     <div class="blog-card">
                         <div class="img-holder">
-                            <img src="assets/imgs/certif3.png" alt="SPARK CLUB program">
+                            <img src="assets/imgs/certif11.jpg" alt="TCF CERTIFICATION">
                         </div>
                         <div class="content-holder">
-                            <h6 class="title">IEEEXtreme 15.0</h6>
+                            <h6 class="title">TCF CERTIFICATION</h6>
                             <br>
-                            <p>certificate of participation in IEEEXtreme 15.0 programming competition that hosted +12,900 participants.</p>
-                            <br>   
-                            <p><b>23rd October 2021.</b></p>
+                            <p>The TCF (Test de Connaissance du Français) - Tout public is a French language proficiency test.</p>
+                            <br>
+                            <p><b>Tunisia, February 2024.</b></p>
                         </div>
                     </div>
                     <div class="blog-card">
                         <div class="img-holder">
-                            <img src="assets/imgs/certif4.jpg" alt="SPARK CLUB program">
+                            <img src="assets/imgs/certif10.jpg" alt="Club Art Revolution">
                         </div>
                         <div class="content-holder">
-                            <h6 class="title">Dojoko</h6>
+                            <h6 class="title">Club Art Revolution</h6>
                             <br>
-                            <p>Certificate of Participation in the Global Conference of Finance and Consulting Students.</p>
-                            <br> 
-                            <p><b>11th of December, 2021.</b></p>
+                            <p>Certificate of appreciation for contributing to the Communication department's prosperity for 2022-2023 mondate. "THE SAVIOR".</p>
+                            <br>
+                            <p><b>Tunisia, December 2023.</b></p>
                         </div>
                     </div>
                     <div class="blog-card">
                         <div class="img-holder">
-                            <img src="assets/imgs/certif5.jpg" alt="SPARK CLUB program">
+                            <img src="assets/imgs/certif9.png" alt="Club Art Revolution">
+                        </div>
+                        <div class="content-holder">
+                            <h6 class="title">Club Art Revolution</h6>
+                            <br>
+                            <p>Certificate of recognition for being part of the Club Art Revolution IHEC Carthage and contributing to its success by being member for 2022-2023 mondate.</p>
+                            <br>
+                            <p><b>Tunisia, 7 August 2023.</b></p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="img-holder">
+                            <img src="assets/imgs/certif8.png" alt="CCNAv7">
+                        </div>
+                        <div class="content-holder">
+                            <h6 class="title">CCNAv7</h6>
+                            <br>
+                            <p>Certificate of Course Completion CCNAv7: Switching, Routing, and Wireless Essentials.</p>
+                            <br>
+                            <p><b>Tunisia, 20 july 2023.</b></p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="img-holder">
+                            <img src="assets/imgs/certif7.png" alt="Bal des Projets">
+                        </div>
+                        <div class="content-holder">
+                            <h6 class="title">Certificate of Participation</h6>
+                            <br>
+                            <p>Awarded for taking part in the 10th edition of the Project Gala.</p>
+                            <br>
+                            <p><b>Tunisia, 12 June 2023.</b></p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="img-holder">
+                            <img src="assets/imgs/certif6.jpg" alt="Business Forum">
+                        </div>
+                        <div class="content-holder">
+                            <h6 class="title">Business Forum</h6>
+                            <br>
+                            <p>Certificate of participation in the business forum for contribution and collaboration within the organizing team.</p>
+                            <br>
+                            <p><b>Tunisia, 2021.</b></p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="img-holder">
+                            <img src="assets/imgs/certif5.jpg" alt="Dojoko">
                         </div>
                         <div class="content-holder">
                             <h6 class="title">Dojoko</h6>
@@ -748,21 +818,62 @@
                     </div>
                     <div class="blog-card">
                         <div class="img-holder">
-                            <img src="assets/imgs/certif6.jpg" alt="SPARK CLUB program">
+                            <img src="assets/imgs/certif4.jpg" alt="Dojoko">
                         </div>
                         <div class="content-holder">
-                            <h6 class="title">Business Forum</h6>
+                            <h6 class="title">Dojoko</h6>
                             <br>
-                            <p>Certificate of participation in the business forum for contribution and collaboration within the organizing team.</p>
-                            <br>
-                            <p><b>Tunisia, 2021.</b></p>
+                            <p>Certificate of Participation in the Global Conference of Finance and Consulting Students.</p>
+                            <br> 
+                            <p><b>11th of December, 2021.</b></p>
                         </div>
                     </div>
+                    <div class="blog-card">
+                        <div class="img-holder">
+                            <img src="assets/imgs/certif3.png" alt="IEEEXtreme 15.0">
+                        </div>
+                        <div class="content-holder">
+                            <h6 class="title">IEEEXtreme 15.0</h6>
+                            <br>
+                            <p>certificate of participation in IEEEXtreme 15.0 programming competition that hosted +12,900 participants.</p>
+                            <br>   
+                            <p><b>23rd October 2021.</b></p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="img-holder">
+                            <img src="assets/imgs/certif2.jpg" alt="IEEE CS Chapter - Media Manager">
+                        </div>
+                        <div class="content-holder">
+                            <h6 class="title">IEEE CS Chapter - Media Manager</h6>
+                            <br>
+                            <p>Certificate of appreciation for commitment, and dedication in making the 2021-2022 mandate a success as the Media Manager for the IEEE CS Chapter - ESPRIT Student Branch.</p>
+                            <br>
+                            <p><b>Tunisia, 20 April 2021.</b></p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="img-holder">
+                            <img src="assets/imgs/certif1.jpg" alt="SPARK CLUB program">
+                        </div>
+                        <div class="content-holder">
+                            <h6 class="title">SPARK CLUB program</h6>
+                            <br>
+                            <p>Certificate of Participation in the Framework of the SPARK CLUB Ideation Workshops for the Entrepreneurship of Young People.</p>
+                            <br>
+                            <p><b>Tunis, 20 March 2018.</b></p>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="pagination-controls">
-                    <button id="prev" onclick="changePage(-1)">Previous</button>
+                    <button id="prev" onclick="changePage(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
                     <span id="page-num"></span>
-                    <button id="next" onclick="changePage(1)">Next</button>
+                    <button id="next" onclick="changePage(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         
@@ -770,7 +881,7 @@
 
         
     <script>
-        let currentPage = 1;
+       let currentPage = 1;
 const cardsPerPage = 3; // Number of cards to display per page
 const cards = document.querySelectorAll('#certificates-container .blog-card');
 
@@ -782,14 +893,16 @@ function showPage(page) {
     // Hide all cards and then show the ones for the current page
     cards.forEach((card, index) => {
         if (index >= start && index < end) {
-            card.classList.add('active');
+            card.classList.remove('hidden');
+            card.classList.add('visible');
         } else {
-            card.classList.remove('active');
+            card.classList.remove('visible');
+            card.classList.add('hidden');
         }
     });
 
     // Update the page number display
-    document.getElementById('page-num').textContent = `Page ${page}`;
+    document.getElementById('page-num').textContent = `${page}`;
 
     // Disable/enable buttons as needed
     document.getElementById('prev').disabled = page === 1;
@@ -814,6 +927,8 @@ function changePage(direction) {
 
 // Initialize the pagination by showing the first page
 showPage(currentPage);
+
+
 
 
     </script>

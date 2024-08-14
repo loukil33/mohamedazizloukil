@@ -11270,15 +11270,22 @@ p {
 
 /* blog wrapper */
 .blog-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   text-align: left;
   border: 1px solid #dee2e6;
   margin-bottom: 30px;
   overflow: hidden;
   margin: 0 15px 30px;
+  /* Add transition for smooth visibility changes */
+  transition: opacity 0.3s ease;
+}
+
+.blog-card.hidden {
+  display: none; /* Hide elements */
+}
+
+.blog-card.visible {
+  display: flex; /* Show elements */
 }
 
 .blog-card .img-holder {
@@ -11289,8 +11296,7 @@ p {
 .blog-card .img-holder img {
   width: 600px;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .blog-card .content-holder {
