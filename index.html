@@ -66,17 +66,22 @@
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/MedAziz.lk.7"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://x.com/louukil33"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/mohamed-aziz-loukil/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/louukiil33/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/loukil33"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
             </ul>  
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Med Aziz Loukil</h1>
                 <h6 class="header-mono" >Data Science | Student</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <a href="assets/imgs/resume.pdf" target="_blank">
+                    <button class="btn btn-primary btn-rounded">
+                        <i class="ti-printer pr-2"></i>Print Resume
+                    </button>
+                </a>
+                
             </div>
         </div>
     </header>
@@ -125,7 +130,23 @@
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Data Science Student</h5>
                 <p class="mt-20">I am a passionate developer with a strong background in educational projects, always eager to expand my knowledge.In September 2024, I will enter the final year of my studies, pursuing a Master's degree in Intelligent Systems and Applications at Gustave Eiffel University in France, while simultaneously earning my National Engineering Diploma from Esprit University in Tunisia.Feel free to explore my projects, and don't hesitate to reach out for any questions or collaboration opportunities.</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+                
+                <button class="btn btn-outline-danger" onclick="downloadFile()">
+                    <i class="icon-down-circled2"></i>Download My CV
+                </button>
+                
+                <script>
+                function downloadFile() {
+                    const link = document.createElement('a');
+                    link.href = 'assets/imgs/resume.pdf';  // Replace with your file path
+                    link.download = 'My_CV.pdf';         // Optional: Specify the default file name
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+                </script>
+                
+                
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -137,11 +158,11 @@
                     
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/MedAziz.lk.7"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://x.com/louukil33"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/mohamed-aziz-loukil/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/louukiil33/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/loukil33"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
                 </ul>  
             </div>
             <div class="col-lg-4 about-card">
@@ -955,18 +976,18 @@ showPage(currentPage);
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send me an email</h4>
-                        <form action="">
+                        <form action="send_email.php" method="post">
                             <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Object *" required>
+                                <input class="form-control" type="text" name="subject" placeholder="Object *" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Your Email *" required>
+                                <input class="form-control" type="email" name="email" placeholder="Your Email *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *"  placeholder="Content *" rows="7" required></textarea>
+                                <textarea class="form-control" name="message" placeholder="Message *" rows="7" required></textarea>
                             </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Email</button>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary">Send Email</button>
                             </div>
                         </form>
                     </div>
@@ -999,11 +1020,11 @@ showPage(currentPage);
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-dark" href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-dark" href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-dark" href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/MedAziz.lk.7"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-dark" href="https://x.com/louukil33"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/mohamed-aziz-loukil/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/louukiil33/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-dark" href="https://github.com/loukil33"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
                         </ul> 
                     </div>
                 </div>
